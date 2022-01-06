@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px;
+}
+hr {
+  border: 2px solid black;
+  margin-bottom: 40px;
+}
+.product-container {
+  padding: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+  width: 200px;
+  border: 3px solid black;
+  line-height: 6.5px;
+}
+.product-container p {
+  text-align: center;
+  text-justify: center;
+}
+.delete-checkbox {
+  position: absolute;
+}
+#product-list {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: center;
+  justify-items: center;
+}
+#header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+#header span {
+  justify-self: end;
+}
+#header h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+input[type="submit"],
+input[type="button"] {
+  margin-right: 20px;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  padding: 0.25em 0.5em;
+  border: 2px solid;
+  font-size: 16px;
+}
+input[type="submit"]:active,
+input[type="button"]:active {
+  box-shadow: 0px 0px 0px 0px;
+  transform: translate(5px, 5px);
+}
+#footer {
+  text-align: center;
+  font-weight: bold;
+}
+#product-add {
+  margin-top: 60px;
+  font-size: 18px;
+}
+#product-add span {
+  display: block;
+  margin-bottom: 20px;
+}
+#product-add input[type="text"],
+select {
+  font-size: 18px;
+}
+select {
+  margin-top: 30px;
+  height: 27px;
+}
+#product-add span label {
+  display: inline-block;
+  width: 150px;
+}
+#type-tip {
+  margin-top: 30px;
+  font-style: italic;
+}
+#dynaForm span {
+  display: none;
+}
+#error {
+  color: red;
+}
+
+@media only screen and (max-width: 1088px) {
+  #product-list {
+    grid-template-columns: 50% 50%;
+  }
+}
